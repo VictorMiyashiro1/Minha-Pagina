@@ -1,0 +1,41 @@
+{% extends 'portfolio/css.html' %}
+{% load static %}
+
+{% block title %}Home | Meu Portfólio{% endblock %}
+
+{% block content %}
+<section id="home" class="reveal no-hover">
+    <h1>Bem-vindo ao meu mundo! 🌍</h1>
+</section>
+
+    <section id="sobre" class="reveal">
+        <h2><i class="fas fa-user"></i> Sobre Mim</h2>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <div style="flex-shrink: 0;">
+                <img src="{% static 'imagem/foto-de-perfil.jpg' %}" alt="Minha foto" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid #1DB954;">
+            </div>
+            <p style="margin: 0;">Meu nome é Victor Hugo Campos, sou estudante de Sistemas de Informação e apaixonado por tecnologia e desenvolvimento de software. Tenho foco em criar soluções eficientes, unindo programação, análise de dados e pensamento estratégico. Estou sempre em busca de novos desafios e oportunidades para evoluir como desenvolvedor e gerar valor com inovação e criatividade..</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="reveal">
+        <h2><i class="fas fa-code"></i> Projetos</h2>
+        <ul>
+            <li>Projeto 1: Sistema de Blog</li>
+            <li>Projeto 2: API E-commerce</li>
+        </ul>
+    </section>
+   
+    <a href="{% static 'pdf/curriculo.pdf' %}" download class="botao-cv">
+        <i class="fas fa-download"></i> Meu Currículo
+    </a>
+   
+    
+
+    <section id="contato" class="reveal">
+        <h2><i class="fas fa-envelope"></i> Contato</h2>
+        <p>Email: <a href="mailto:vh.miyashiro@gmail.com" style="color: #1DB954; text-decoration: underline;">vh.miyashiro@gmail.com</a></p>
+        <p>Telefone: <a href="tel:+5513991339256" style="color: #1DB954; text-decoration: underline;">(13) 99133-9256</a></p>
+        <p>Linkedin: <a href="www.linkedin.com/in/victorhugodecamposmiyashiro" style="color: #1DB954; text-decoration: underline;">www.linkedin.com/in/victorhugodecamposmiyashiro</a></p>
+    </section>
+{% endblock %}
